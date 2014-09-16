@@ -33,6 +33,11 @@ services := \
 # The convention is to name each service module 'services.$(module_name)'
 LOCAL_STATIC_JAVA_LIBRARIES := $(addprefix services.,$(services))
 
+ifneq ($(TARGET_HAVE_CWS),)
+LOCAL_STATIC_JAVA_LIBRARIES := $(addprefix services.,$(services)) CwsServiceMgr CsmClient
+LOCAL_JAVA_LIBRARIES := com.intel.config
+endif
+
 include $(BUILD_JAVA_LIBRARY)
 
 # native library

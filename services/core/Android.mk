@@ -15,4 +15,8 @@ LOCAL_JAVA_LIBRARIES += services.accessibility
 
 LOCAL_JAVA_LIBRARIES += org.cyanogenmod.platform.sdk
 
+ifneq ($(TARGET_HAVE_CWS),)
+LOCAL_STATIC_JAVA_LIBRARIES := CwsServiceMgr CsmClient
+endif
+
 include $(BUILD_STATIC_JAVA_LIBRARY)
