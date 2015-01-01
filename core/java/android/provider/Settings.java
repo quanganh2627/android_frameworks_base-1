@@ -4896,7 +4896,14 @@ public final class Settings {
          *
          * @hide
          */
+
         public static final String LOCKSCREEN_BOTTOM_ICONS_COLOR = "lockscreen_bottom_icons_color";
+
+        /** Whether to vibrate when quick settings tile is pressed.
+         *
+         * @hide
+         */
+        public static final String QUICK_SETTINGS_TILES_VIBRATE = "quick_settings_vibrate";
 
         /**
          * Change the color of the lockscreen owner's info text
