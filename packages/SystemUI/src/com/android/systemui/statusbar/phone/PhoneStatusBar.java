@@ -2142,9 +2142,8 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
 
         if(mHeadsUpNotificationView.getWindowToken() == null && (!mHeadsUpNotificationView.isAttachedToWindow())) {
             mWindowManager.addView(mHeadsUpNotificationView, lp);
-        } else {
-            mWindowManager.updateViewLayout(mHeadsUpNotificationView, lp);
         }
+
     }
 
     private void removeHeadsUpView() {
