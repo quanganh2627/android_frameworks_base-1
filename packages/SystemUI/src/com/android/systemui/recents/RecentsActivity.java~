@@ -127,6 +127,7 @@ public class RecentsActivity extends Activity implements RecentsView.RecentsView
                 overridePendingTransition(R.anim.recents_to_launcher_enter,
                         R.anim.recents_to_launcher_exit);
             }
+        }
     }
 
     /**

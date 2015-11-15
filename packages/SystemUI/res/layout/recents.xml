@@ -31,7 +31,7 @@
         android:id="@+id/recents_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:focusable="true">
+        android:focusable="true" />
 
     <include layout="@layout/recents_membar" />
 
